@@ -80,7 +80,7 @@ end
 
 If you need to use custom config per request or for specific non-global cases
 you can instantiate a `CircleCi::Config` object with all the same granularity
-as a global config.
+as a global config. have fun!
 
 ```ruby
 # Using a new token
