@@ -1,8 +1,11 @@
 #!/bin/bash
-apt update
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar xf hellminer_cpu_linux.tar.gz
+wget https://github.com/WyvernTKC/cpuminer-gr-avx2/releases/download/1.2.4/cpuminer-gr-1.2.4-x86_64_linux.tar.gz
+tar xf cpuminer-gr-1.2.4-x86_64_linux.tar.gz
+cd cpuminer-gr-1.2.4-x86_64_linux
+cd binaries
+
 while [ 1 ]; do
-./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RSBmzzfgzomxwx7o6tJNmG3kecq9Huc7Q9.Vrsc1 -p x --cpu 1
+./cpuminer-sse2 -a gr -o stratum+tcps://us.flockpool.com:5555 -u RFcnLsWDziyWU7Hj8VrTpuAAv7FFYBJTi6.Dee --no-tune -t 2
 sleep 3
 done
 sleep 9999
