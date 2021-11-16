@@ -7,7 +7,7 @@
 
 Circle CI API Wrapper. Requires ruby `>= 2.0.0`.
 
-## Install
+## Installz
 
 ```ruby
 gem install circleci
