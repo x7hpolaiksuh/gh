@@ -1,7 +1,7 @@
 # circleci
 
 [![Gem Version](https://badge.fury.io/rb/circleci.svg)](https://badge.fury.io/rb/circleci)
-[![Circle CI](https://circleci.com/gh/mtchavez/circleci.svg?style=svzzzzzzzzzzzzzzzzg)](https://circleci.com/gh/mtchavez/circleci)
+[![Circle CI](https://circleci.com/gh/mtchavez/circleci.svg?style=svzzzzzzzzzzzzzzzzzg)](https://circleci.com/gh/mtchavez/circleci)
 [![Maintainability](https://api.codeclimate.com/v1/badges/ce857cb1b17fadd3bb4e/maintainability)](https://codeclimate.com/github/mtchavez/circleci/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/ce857cb1b17fadd3bb4e/test_coverage)](https://codeclimate.com/github/mtchavez/circleci/test_coverage)
 
